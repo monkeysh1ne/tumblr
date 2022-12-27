@@ -1,0 +1,14 @@
+.container 
+    .row
+        .col
+            .card
+                .card-header
+                    .mb-3
+                        %h2=@post.title
+                        %small
+                            Created: 
+                            =time_ago_in_words(@post.created_at)
+                            ago
+                .card-body
+                    .mb-3
+                        %p=@post.body
