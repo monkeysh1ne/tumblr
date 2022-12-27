@@ -1,1 +1,16 @@
-%h1.title.is-1 This is the index page
+.container 
+    .row
+        .col
+            %h1 All Posts
+            -@posts.each do |post|
+                .card
+                    .card-header
+                        .mb-3
+                            %h2
+                                =link_to post.title, post, { class: "link-primary" }
+                            %small
+                                Submitted: 
+                                =time_ago_in_words(post.created_at)
+                                ago
+                    .card-body
+                        %p=post.body.truncate(80)
