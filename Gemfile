@@ -45,6 +45,9 @@ gem "bootsnap", require: false
 # added for this project
 gem 'bootstrap', '~> 5.2', '>= 5.2.3'
 gem 'bulma-rails', '~> 0.9.4'
+#gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
+#gem 'font_awesome5_rails'
+gem "font-awesome-sass", "~> 6.2.1"
 gem 'haml', '~> 6.1', '>= 6.1.1'
 gem 'simple_form', '~> 5.1'
 gem 'devise', '~> 4.8', '>= 4.8.1'

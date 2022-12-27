@@ -1,12 +1,19 @@
-.h1 Make something!
-
-=form_for :post, url:posts_path do |f|
-    .card
-        .card-body
-            .mb-3
-                =f.label :title, { class: "form-label" }
-                =f.text_field :title, { class: "form-control", placeholder: "Title" }
-            .mb-3
-                =f.label :body, { class: "form-label" }
-                =f.text_area :body, { class: "form-control", placeholder: "Body" }
-            =f.button :submit, class: "btn btn-primary"
+.container
+    .row
+        .col
+        .col
+            =form_for :post, url:posts_path do |f|
+                .card
+                    .card-title
+                        .h1 New Post
+                    .card-body
+                        .mb-3
+                            =f.label :title, { class: "form-label" }
+                            =f.text_field :title, { class: "form-control", placeholder: "Title" }
+                        .mb-3
+                            =f.label :body, { class: "form-label" }
+                            =f.text_area :body, { class: "form-control", placeholder: "Body" }
+                        %i.fa-regular.fa-envelope
+                        -# %i.fa-regular.fa-envelope
+                        =f.button :submit, class: "btn btn-primary"
+        .col
