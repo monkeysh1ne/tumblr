@@ -7,7 +7,7 @@
                     .card-header
                         .mb-3
                             %h2
-                                =link_to post.title, post, { class: "link-primary" }
+                                =link_to post.title, post, { class: "link-primary text-decoration-none" }
                             %small
                                 Submitted: 
                                 =time_ago_in_words(post.created_at)
