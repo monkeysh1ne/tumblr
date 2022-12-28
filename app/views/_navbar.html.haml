@@ -1,0 +1,15 @@
+%nav.navbar.navbar-expand-lg.bg-body-tertiary
+  .container-fluid
+    = link_to "Tumblr", root_path, class: "navbar-brand"
+    %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      %ul.navbar-nav
+        %li.nav-item
+          = link_to "Home", root_path, class: "nav-link"
+        %li.nav-item
+          = link_to "Posts", posts_path, class: "nav-link"
+        %li.nav-item
+          = link_to "About", pages_about_path, class: "nav-link"
+        %li.nav-item
+          %a.nav-link.disabled Disabled
