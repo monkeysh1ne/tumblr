@@ -30,3 +30,12 @@
  .card-header, .card-header > h2, .card-header>h2>a, .card-body {
     color: #FFF;
  }
+
+ .card-header>h2>a:hover {
+    color: #999;
+ }
+
+ #services_card > * {
+    color: #000;
+    background-color: rgb(146,177, 83);
+ }
