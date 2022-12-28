@@ -4,13 +4,12 @@
             %h1 All Posts
             -@posts.each do |post|
                 .card
-                    .card-header
-                        .mb-3
-                            %h2
-                                =link_to post.title, post, { class: "link-primary text-decoration-none" }
-                            %small
-                                Submitted: 
-                                =time_ago_in_words(post.created_at)
-                                ago
+                    .card-header.py-3
+                        %h2
+                            =link_to post.title, post, { class: "text-decoration-none" }
+                        %small
+                            Submitted: 
+                            =time_ago_in_words(post.created_at)
+                            ago
                     .card-body
                         %p=post.body.truncate(80)

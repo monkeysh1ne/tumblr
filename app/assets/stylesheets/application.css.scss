@@ -16,3 +16,17 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "font-awesome";
  @import "bootstrap";
+
+
+ // ==Daz personal styles start==
+ :root {
+    --bs-body-bg: rgba(146,177, 83, .25);
+ }
+
+ .card-header, .card-body {
+    background-color: rgba(146, 177, 83, .5);
+ }
+
+ .card-header, .card-header > h2, .card-body {
+    color: #FFF;
+ }
