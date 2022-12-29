@@ -1,8 +1,9 @@
 .container
     .row
         .col
-        .col
             =form_for :post, url:posts_path do |f|
+                -if @post.errors.any?
+                    =pluralize(@post.errors.count, "error")
                 .card
                     .card-title
                         .h1 New Post
@@ -15,4 +16,3 @@
                             =f.text_area :body, { class: "form-control", placeholder: "Body" }
                         %i.fa-regular.fa-envelope.fa-2xl
                         =f.button :submit, class: "btn btn-primary"
-        .col
